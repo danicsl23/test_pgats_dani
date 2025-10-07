@@ -3,7 +3,7 @@ import { check, sleep } from 'k6';
 
 export const options = {
   vus: 200,           // Número de usuários virtuais simultâneos
-  duration: '10s',     // Tempo total do teste
+  duration: '50s',     // Tempo total do teste
 };
 
 export default function () {
@@ -14,5 +14,5 @@ export default function () {
     'tempo de resposta < 1s': (r) => r.timings.duration < 1000,
   });
 
-    sleep(1);
+  sleep(1);
 }

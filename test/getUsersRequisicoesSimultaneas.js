@@ -3,7 +3,7 @@ import { check } from 'k6';
 
 export const options = {
   vus: 100,           // número de usuários simultâneos
-  duration: '10s',    // duração total do teste
+  duration: '50s',    // duração total do teste
 };
 
 let respostaEsperada = null;
